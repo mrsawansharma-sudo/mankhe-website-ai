@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=JetBrains+Mono:wght@300;400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-mankhe-forest: #1A3C2E;
+  --color-mankhe-earth: #4B3621;
+  --color-mankhe-leaf: #588157;
+  --color-mankhe-canvas: #FAF9F6;
+  --color-mankhe-text: #1C1C1C;
+  --color-mankhe-accent: #D4AF37;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-mankhe-canvas text-mankhe-text antialiased selection:bg-mankhe-leaf selection:text-white;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-serif tracking-tight;
+  }
+}
+
+.canvas-texture {
+  background-image: url("https://www.transparenttextures.com/patterns/rough-cloth.png");
+  background-repeat: repeat;
+}
+
+.graphic-novel-panel {
+  @apply relative overflow-hidden border-4 border-mankhe-forest shadow-2xl;
+}
+
+.editorial-text {
+  @apply leading-relaxed tracking-wide;
+}
+
+.mask-fade-bottom {
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+.mask-fade-top {
+  mask-image: linear-gradient(to top, black 80%, transparent 100%);
+}
