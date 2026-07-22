@@ -75,11 +75,6 @@ export default function Opportunities() {
                 </div>
                 <h2 className="text-4xl lg:text-5xl font-serif font-black text-mankhe-forest">{opt.name}</h2>
                 <p className="text-xl text-mankhe-earth/80 leading-relaxed">{opt.desc}</p>
-                <div className="pt-6">
-                  <Link to="/join" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-mankhe-forest text-white font-bold rounded-full uppercase tracking-widest hover:bg-mankhe-leaf transition-colors shadow-lg">
-                    Access via Platform <ArrowRight size={20} />
-                  </Link>
-                </div>
               </div>
             </motion.div>
           ))}
