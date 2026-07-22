@@ -44,10 +44,6 @@ export default function Footer() {
           </div>
           <div className="pt-4 space-y-2">
             <p className="text-xs">© 2026 Mankhe. All rights reserved.</p>
-            <Link to="/internal/login?key=secure_access_2026" className="text-[10px] uppercase tracking-widest text-stone-500 hover:text-mankhe-gold transition-colors flex items-center gap-2">
-              <span className="w-1 h-1 bg-mankhe-gold rounded-full"></span>
-              Staff Login
-            </Link>
           </div>
         </div>
       </div>

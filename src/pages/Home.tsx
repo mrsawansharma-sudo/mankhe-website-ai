@@ -27,9 +27,6 @@ export default function Home() {
               MANKHE helps farmers create digital farm profiles, map land, and access carbon, agroforestry, biodiversity and sustainability opportunities.
             </p>
             <div className="flex gap-4 pt-4">
-              <a href="https://app.mankhe.com" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-mankhe-forest text-mankhe-canvas font-bold rounded-full uppercase tracking-widest hover:bg-mankhe-leaf transition-colors">
-                Register Farm
-              </a>
             </div>
           </motion.div>
           <motion.div {...fadeInUp} className="relative rounded-[2.5rem] overflow-hidden shadow-2xl bg-white/50">
@@ -176,9 +173,6 @@ export default function Home() {
       <section className="py-24 px-6 bg-mankhe-forest text-mankhe-canvas text-center">
         <div className="max-w-4xl mx-auto space-y-8">
           <h2 className="text-4xl md:text-5xl font-serif font-black">Ready to Join the Next Generation of Climate Opportunities?</h2>
-          <a href="https://app.mankhe.com" target="_blank" rel="noopener noreferrer" className="inline-block px-12 py-6 bg-mankhe-leaf text-white font-bold rounded-full uppercase tracking-widest hover:bg-white hover:text-mankhe-forest transition-colors">
-            Register Farm
-          </a>
         </div>
       </section>
     </div>

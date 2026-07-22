@@ -101,9 +101,6 @@ export default function App() {
               {link.name}
             </Link>
           ))}
-          <a href="https://app.mankhe.com" target="_blank" rel="noopener noreferrer" className="ml-2 lg:ml-4 px-4 lg:px-6 py-2 bg-mankhe-forest text-mankhe-canvas font-bold text-[9px] lg:text-[10px] uppercase tracking-[0.2em] rounded-full hover:bg-mankhe-leaf transition-colors whitespace-nowrap">
-            Register Farm
-          </a>
         </motion.div>
 
         {/* Mobile Nav Toggle */}
@@ -126,7 +123,7 @@ export default function App() {
             exit={{ opacity: 0, y: -20 }}
             className="fixed inset-0 bg-mankhe-canvas z-40 flex flex-col items-center justify-center gap-8 p-8"
           >
-            {[...navLinks, { name: 'Register Farm', path: 'https://app.mankhe.com' }].map((item) => (
+            {navLinks.map((item) => (
               <a 
                 key={item.name}
                 href={item.path}
