@@ -140,7 +140,7 @@ export default function Home() {
             <div className="bg-mankhe-forest text-white p-10 rounded-3xl space-y-6">
               <h3 className="text-3xl font-serif font-bold">MANKHE Platform</h3>
               <p className="text-white/80">Farmer-first carbon participation platform.</p>
-              <a href="https://app.mankhe.com" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-3 bg-mankhe-leaf text-white font-bold rounded-full">Explore →</a>
+              <Link to="/join" className="inline-block px-8 py-3 bg-mankhe-leaf text-white font-bold rounded-full">Join Platform →</Link>
             </div>
             <div className="relative bg-mankhe-earth text-white p-10 rounded-3xl space-y-6 overflow-hidden">
               <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb7780b9?q=80&w=800&auto=format&fit=crop" alt="Regeneration" className="absolute inset-0 w-full h-full object-cover opacity-30" referrerPolicy="no-referrer" />
@@ -150,6 +150,26 @@ export default function Home() {
                 <Link to="/chhattisgarh-regeneration" className="inline-block px-8 py-3 bg-white text-mankhe-earth font-bold rounded-full">Explore Initiative →</Link>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 6.5 - PARTNERS */}
+      <section className="py-20 px-6 border-y border-mankhe-forest/10 overflow-hidden bg-white/30">
+        <div className="max-w-6xl mx-auto mb-12 text-center">
+          <h2 className="text-sm font-bold text-mankhe-earth/60 tracking-widest uppercase">Collaboration and Helping Partners</h2>
+        </div>
+        <div className="relative flex overflow-hidden mask-fade-sides">
+          <div className="flex w-max animate-marquee gap-16 md:gap-32 items-center">
+            {[...Array(2)].map((_, idx) => (
+              <div key={idx} className="flex shrink-0 gap-16 md:gap-32 items-center pr-16 md:pr-32">
+                <img src="/igkv.png" alt="IGKV" className="h-16 md:h-24 w-auto shrink-0 object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/gee.png" alt="Google Earth Engine" className="h-16 md:h-24 w-auto shrink-0 object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/prithu.png" alt="Prithu" className="h-12 md:h-20 w-auto shrink-0 object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/startup-india.png" alt="Startup India" className="h-12 md:h-20 w-auto shrink-0 object-contain transition-transform duration-300 hover:scale-105" />
+                <img src="/dhamtari.jpg" alt="Dhamtari District" className="h-16 md:h-24 w-auto shrink-0 object-contain transition-transform duration-300 hover:scale-105 mix-blend-multiply" />
+              </div>
+            ))}
           </div>
         </div>
       </section>

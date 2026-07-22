@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Building2, LineChart, Users, Globe2 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function ForOrganizations() {
   const orgs = [
@@ -43,9 +44,9 @@ export default function ForOrganizations() {
             Achieve your climate and sustainability targets by partnering with MANKHE's network of verified farmers.
           </p>
           <div className="mt-10">
-            <a href="https://app.mankhe.com" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 bg-mankhe-forest text-mankhe-canvas font-bold rounded-full uppercase tracking-widest hover:bg-mankhe-leaf shadow-xl transition-all hover:-translate-y-1">
+            <Link to="/join" className="inline-block px-8 py-4 bg-mankhe-forest text-mankhe-canvas font-bold rounded-full uppercase tracking-widest hover:bg-mankhe-leaf shadow-xl transition-all hover:-translate-y-1">
               Partner With Us
-            </a>
+            </Link>
           </div>
         </motion.div>
 

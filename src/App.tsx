@@ -14,6 +14,7 @@ import Protocol from './pages/Protocol';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import CookiePolicy from './pages/CookiePolicy';
+import Join from './pages/Join';
 
 export default function App() {
   const { scrollYProgress, scrollY } = useScroll();
@@ -147,6 +148,7 @@ export default function App() {
       {/* Routes */}
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/join" element={<Join />} />
         <Route path="/opportunities" element={<Opportunities />} />
         <Route path="/for-organizations" element={<ForOrganizations />} />
         <Route path="/initiatives" element={<Initiatives />} />

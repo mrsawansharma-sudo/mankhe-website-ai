@@ -12,6 +12,13 @@
   --color-mankhe-canvas: #FAF9F6;
   --color-mankhe-text: #1C1C1C;
   --color-mankhe-accent: #D4AF37;
+
+  --animate-marquee: marquee 30s linear infinite;
+  
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
 }
 
 @layer base {
@@ -48,4 +55,8 @@
 
 .mask-fade-top {
   mask-image: linear-gradient(to top, black 80%, transparent 100%);
+}
+
+.mask-fade-sides {
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }

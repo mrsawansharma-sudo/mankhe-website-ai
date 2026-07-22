@@ -37,9 +37,9 @@ export default function Initiatives() {
               <p className="text-xl text-mankhe-canvas/80 mb-12 max-w-xl leading-relaxed">
                 The farmer-first carbon participation platform designed to aggregate, verify, and connect smallholder farms with global environmental markets.
               </p>
-              <a href="https://app.mankhe.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-mankhe-leaf text-white font-bold rounded-full uppercase tracking-widest hover:bg-white hover:text-mankhe-forest transition-colors shadow-lg">
+              <Link to="/join" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-mankhe-leaf text-white font-bold rounded-full uppercase tracking-widest hover:bg-white hover:text-mankhe-forest transition-colors shadow-lg">
                 Launch Platform <ArrowRight size={20} />
-              </a>
+              </Link>
             </div>
           </motion.div>
 
