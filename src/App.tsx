@@ -153,6 +153,7 @@ export default function App() {
         <Route path="/opportunities" element={<Opportunities />} />
         <Route path="/for-organizations" element={<ForOrganizations />} />
         <Route path="/initiatives" element={<Initiatives />} />
+        <Route path="/news" element={<Initiatives />} />
         <Route path="/chhattisgarh-regeneration" element={<Regeneration />} />
         <Route path="/about" element={<About />} />
         <Route path="/sawan-sharma" element={<SawanSharma />} />
