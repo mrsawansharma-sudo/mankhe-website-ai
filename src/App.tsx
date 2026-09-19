@@ -15,6 +15,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import CookiePolicy from './pages/CookiePolicy';
 import Join from './pages/Join';
+import SawanSharma from './pages/SawanSharma';
 
 export default function App() {
   const { scrollYProgress, scrollY } = useScroll();
@@ -154,6 +155,7 @@ export default function App() {
         <Route path="/initiatives" element={<Initiatives />} />
         <Route path="/chhattisgarh-regeneration" element={<Regeneration />} />
         <Route path="/about" element={<About />} />
+        <Route path="/sawan-sharma" element={<SawanSharma />} />
         <Route path="/the-protocol" element={<Protocol />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-of-service" element={<TermsOfService />} />

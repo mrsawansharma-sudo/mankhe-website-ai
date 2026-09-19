@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 
 const fadeInUp = {
@@ -155,7 +156,7 @@ export default function About() {
             {[
               {
                 name: "Sawan Sharma",
-                role: "Founder & Environmental Architect",
+                role: "Founder & Director",
                 quote: "Technology is a tool; life is the mission. From documenting dying rivers to building carbon platforms, the goal has always been the same: restoration.",
                 journey: "Sawan’s path was shaped by the grit of the ground. While working on the \"Bolti Nadi\" (Speaking River) initiative, he documented the firsthand reality of the Sakri River alongside Amir Hashmi. However, it was the documentary \"Racing Extinction\" that became the catalyst. It pushed him to find a scalable way to protect the planet while serving the farmers who feed it. This led him to the realization that soil health is the ultimate frontline of climate change. Sawan’s foundation in social work started at Hema Samajik Vikas Sansthan (his mother’s NGO, started 2007) where he volunteered for various projects, learning that true impact starts at home.",
                 vitals: [
@@ -208,8 +209,24 @@ export default function About() {
                         referrerPolicy="no-referrer"
                       />
                     </div>
-                    <h3 className="text-2xl font-serif font-black text-mankhe-forest mb-2">{founder.name}</h3>
+                    {founder.name === "Sawan Sharma" ? (
+                      <Link to="/sawan-sharma" className="hover:text-mankhe-leaf transition-colors">
+                        <h3 className="text-2xl font-serif font-black text-mankhe-forest mb-2 hover:text-mankhe-leaf transition-colors">{founder.name}</h3>
+                      </Link>
+                    ) : (
+                      <h3 className="text-2xl font-serif font-black text-mankhe-forest mb-2">{founder.name}</h3>
+                    )}
                     <p className="text-mankhe-leaf bg-mankhe-leaf/10 inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">{founder.role}</p>
+                    {founder.name === "Sawan Sharma" && (
+                      <div className="mt-2">
+                        <Link 
+                          to="/sawan-sharma" 
+                          className="inline-flex items-center gap-1 text-xs font-mono font-bold text-mankhe-leaf hover:text-mankhe-forest transition-colors underline underline-offset-4"
+                        >
+                          Sawan Sharma — Founder & Director →
+                        </Link>
+                      </div>
+                    )}
                   </div>
                 </div>
                 

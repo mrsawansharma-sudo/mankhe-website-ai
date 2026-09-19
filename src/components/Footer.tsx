@@ -19,6 +19,7 @@ export default function Footer() {
           <h4 className="font-display text-[10px] uppercase tracking-[0.3em] text-mankhe-leaf">Navigation</h4>
           <ul className="space-y-4 text-sm text-mankhe-canvas/80">
             <li><Link to="/" onClick={() => window.scrollTo(0, 0)} className="hover:text-mankhe-leaf transition-colors">Home</Link></li>
+            <li><Link to="/sawan-sharma" onClick={() => window.scrollTo(0, 0)} className="hover:text-mankhe-leaf transition-colors">Sawan Sharma — Founder & Director</Link></li>
             <li><Link to="/chhattisgarh-regeneration" onClick={() => window.scrollTo(0, 0)} className="hover:text-mankhe-leaf transition-colors">Impact</Link></li>
             <li><Link to="/the-protocol" onClick={() => window.scrollTo(0, 0)} className="hover:text-mankhe-leaf transition-colors">Methodology</Link></li>
             <li><Link to="/about" onClick={() => window.scrollTo(0, 0)} className="hover:text-mankhe-leaf transition-colors">Contact</Link></li>
