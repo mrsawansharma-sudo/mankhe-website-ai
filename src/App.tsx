@@ -157,10 +157,12 @@ export default function App() {
         <Route path="/chhattisgarh-regeneration" element={<Regeneration />} />
         <Route path="/about" element={<About />} />
         <Route path="/sawan-sharma" element={<SawanSharma />} />
+        <Route path="/sawan-sharma/*" element={<SawanSharma />} />
         <Route path="/the-protocol" element={<Protocol />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-of-service" element={<TermsOfService />} />
         <Route path="/cookie-policy" element={<CookiePolicy />} />
+        <Route path="*" element={<Home />} />
       </Routes>
 
       {/* Footer */}
