@@ -26,7 +26,20 @@ export default function Home() {
             <p className="text-lg text-mankhe-text/70">
               MANKHE helps farmers create digital farm profiles, map land, and access carbon, agroforestry, biodiversity and sustainability opportunities.
             </p>
-            <div className="flex gap-4 pt-4">
+            <div className="flex flex-wrap gap-4 pt-4">
+              <Link 
+                to="/kisan" 
+                className="inline-flex items-center gap-2 px-6 py-3.5 bg-mankhe-forest hover:bg-mankhe-leaf text-white rounded-xl font-medium transition-all shadow-md group"
+              >
+                <span>🌾 किसान प्रदर्शनी इन्फोग्राफिक (Hindi Poster)</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </Link>
+              <Link 
+                to="/join" 
+                className="inline-flex items-center gap-2 px-6 py-3.5 bg-white hover:bg-stone-50 text-mankhe-forest border border-mankhe-forest/20 rounded-xl font-medium transition-colors"
+              >
+                <span>Join Platform</span>
+              </Link>
             </div>
           </motion.div>
           <motion.div {...fadeInUp} className="relative rounded-[2.5rem] overflow-hidden shadow-2xl bg-white/50">
